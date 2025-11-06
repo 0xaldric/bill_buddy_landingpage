@@ -1,21 +1,23 @@
 export default function Testimonials() {
   const testimonials = [
     {
-      quote: 'No more awkward money chats — BillBuddy makes it fair and fast.',
-      author: 'Sarah Chen',
-      role: 'Group Organizer',
+      quote: "No more awkward money chats — BillBuddy makes it fair and fast.",
+      author: "Sarah Chen",
+      role: "Group Organizer",
     },
     {
-      quote: 'We use it for every group dinner. So simple, and everyone knows exactly what they owe.',
-      author: 'Mike Rodriguez',
-      role: 'Travel Enthusiast',
+      quote:
+        "We use it for every group dinner. So simple, and everyone knows exactly what they owe.",
+      author: "Mike Rodriguez",
+      role: "Travel Enthusiast",
     },
     {
-      quote: 'Finally, a bot that actually works. No complicated setup, just add and go.',
-      author: 'Emma Johnson',
-      role: 'Student',
+      quote:
+        "Finally, a bot that actually works. No complicated setup, just add and go.",
+      author: "Emma Johnson",
+      role: "Student",
     },
-  ]
+  ];
 
   return (
     <section id="testimonials" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
@@ -28,7 +30,6 @@ export default function Testimonials() {
             See what people are saying about BillBuddy Bot.
           </p>
         </div>
-
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
@@ -48,7 +49,9 @@ export default function Testimonials() {
                 "{testimonial.quote}"
               </p>
               <div>
-                <p className="font-semibold text-gray-900">{testimonial.author}</p>
+                <p className="font-semibold text-gray-900">
+                  {testimonial.author}
+                </p>
                 <p className="text-sm text-gray-500">{testimonial.role}</p>
               </div>
             </div>
@@ -56,6 +59,5 @@ export default function Testimonials() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-
